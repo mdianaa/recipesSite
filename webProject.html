@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <link rel="stylesheet" type="text/css" href="projectStyle.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+	<title>Book for Cook</title>
+
+    <link rel="icon" href="cookingBookIcon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-light">
+        <button class="btn btn-outline-light" id="leftButton" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+        ><img id="menuIcon" src="cookingBookIcon.png" alt="menuIcon">
+            <div id="menu"><strong>Menu</strong></siv>
+        </button>
+
+        <div id="header">
+            <h1 id="title">Book for Cook</h1>
+            <h4 id="moto">Choose from the delicious meals collected in the menu and feed your hunger</h4>
+        </div>
+
+        <button class="btn btn-outline-light" id="rightButton" type="button"><img id="addIcon" src="addIcon.png" alt="addIcon">
+            <div id="add"><strong>Add Recipe</strong></div>
+        </button>
+
+    </nav>
+
+    <div class="collapse" id="collapseExample" class="alt-grid">
+        <div class="card card-body">
+            <ul type="none">
+                <li><strong>Breakfast</strong>
+                    <ul>
+                        <li id="pancakes"><button class="button">Pancakes</button></li>
+                        <li id="blueMuffins"><button class="button">Blueberry Muffins</button></li>
+                        <li id="lemonCake"><button class="button">Lemon Cake</button></li>
+                        <li id="chocolateCookies"><button class="button">Chocolate Cookies</button></li>
+                        <li id="savoryMuffins"><button class="button">Savory Muffins</button></li>
+                    </ul>
+                </li>
+               <br>
+                <li>*************************</li>
+                <li><strong>Lunch</strong>
+                    <ul>
+                        <li id="benedictEggs"><button class="button">Eggs Benedict</button></li>
+                        <li id="chickenRice"><button class="button">Chicken with Rice</button></li>
+                        <li id="tomatoSoup"><button class="button">Tomato Soup</button></li>
+                        <li id="musaka"><button class="button">Musaka</button></li>
+                        <li id="peppersRice"><button class="button">Stuffed Peppers with Rice</button></li>
+                    </ul>
+                </li>    
+                <br>
+                <li>*************************</li> 
+                <li><strong>Dinner</strong>
+                    <ul>
+                        <li id="risotto"><button class="button">Risotto with Chicken</button></li>
+                        <li id="spaghetti"><button class="button">Spaghetti Bolonese</button></li>
+                        <li id="chickenPotatoes"><button class="button">Chicken with Potatoes</button></li>
+                        <li id="meatLoaf"><button class="button">Meat Loaf</button></li>
+                        <li id="beef"><button class="button">Beef with Peas</button></li>
+                    </ul>
+                </li>    
+            </ul>
+        </div>
+    </div> 
+
+    <div class="container">
+        <img src="fork.png" alt="fork" id="fork">
+        <img src="knife.png" alt="knife" id="knife">
+        <img src="woodenPlate.png" alt="plate" id="plate">
+        
+        <p id="recipeName"></p>
+        <p id="currentMethod"></p>
+        <p id="currentRecipe"></p>
+        <div id="recipeImage"></div>
+
+        <img src="pancakes.jpeg" alt="pancakesImage" id="pancakesImage">
+        <div id="recipe">
+            <h2 style="left: 30%;">Pancakes</h2>
+            <br>
+            <h5><strong>Ingredients</strong></h5>
+            <h6>- 2 tc flour</h6>
+            <h6>- 1 tc water</h6>
+            <h6>- 2 tc milk</h6>
+            <h6>- 2 eggs</h6>
+            <h6>- 1/2 ts salt</h6>
+            <h6>- 1 tbls sugar</h6>
+            <h6>- 1 tbls butter</h6>
+        </div>
+        <div id="method">
+            <h5><strong>Method</strong></h5>
+            <h6>First you need to beat the eggs and sugar. 
+                It is best to do this with a mixer 
+                but if you do not have a mixer at hand, 
+                it is not a problem to beat the ingredients with a fork. 
+                Add the water to the beaten eggs and sugar, 
+                and then little by little the flour. 
+                Finally, add the milk and salt and mix well again.</h6>
+            <h6>When frying the pancakes, it is best to have a flat pan especially made for pancekes. 
+                The special thing about this pan is that it turns the pancakes much easier 
+                and the mixture is distributed more evenly. 
+                Heat it and brush it with a lump of the butter. 
+                You can also use oil, but in this case your pancakes will not become so fragrant.</h6>    
+        </div>
+    </div>
+
+
+    <script src="projectScript.js"></script>
+
+</body>
+</html>
